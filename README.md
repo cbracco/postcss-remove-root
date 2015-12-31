@@ -1,4 +1,4 @@
-# postcss-remove-root
+# postcss-remove-root [![Build Status](https://travis-ci.org/cbracco/postcss-remove-root.svg)](https://travis-ci.org/cbracco/postcss-remove-root)
 
 > A [PostCSS](https://github.com/postcss/postcss) plugin to remove all instances of “:root” from a stylesheet.
 
