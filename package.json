@@ -1,0 +1,30 @@
+{
+  "name": "postcss-remove-root",
+  "version": "0.0.1",
+  "description": "A PostCSS plugin to remove all instances of \":root\" from a stylesheet.",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test/test.js"
+  },
+  "keywords": [
+    "postcss",
+    "css",
+    "postcss-plugin",
+    "remove",
+    "root"
+  ],
+  "author": "Chris Bracco",
+  "license": "MIT",
+  "repository": "cbracco/postcss-remove-root",
+  "bugs": {
+    "url": "https://github.com/cbracco/postcss-remove-root/issues"
+  },
+  "homepage": "https://github.com/cbracco/postcss-remove-root",
+  "dependencies": {
+    "postcss": "^5.0.13"
+  },
+  "devDependencies": {
+    "postcss-custom-properties": "^5.0.0",
+    "tape": "^4.4.0"
+  }
+}
