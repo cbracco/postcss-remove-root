@@ -4,9 +4,9 @@
 
 > A [PostCSS](https://github.com/postcss/postcss) plugin to remove all instances of “:root” from a stylesheet.
 
-This plugin is very basic. It removes all instances of `:root` from a processed stylesheet (if present). It comes in handy if you are using [postcss-custom-variables](https://github.com/postcss/postcss-custom-properties) to process CSS variables. The included test assumes this scenario.
+This plugin is very basic. It removes all instances of `:root` from a processed stylesheet (if present). It comes in handy if you are using [postcss-custom-properties](https://github.com/postcss/postcss-custom-properties) to process CSS variables. The included test assumes this scenario.
 
-Otherwise, you probably have no use for this plugin. You should run this plugin after running postcss-custom-properties.
+Otherwise, you probably have no use for this plugin. You should run this plugin after running [postcss-custom-properties](https://github.com/postcss/postcss-custom-properties).
 
 ## Installation
 
