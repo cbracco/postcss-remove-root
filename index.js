@@ -6,13 +6,16 @@
  */
 
 var postcss = require('postcss');
+var assign = require('object-assign');
 
 module.exports = postcss.plugin('remove-root', function (opts) {
   return function (css) {
-    opts = opts || {};
+    opts = assign({
+      remove: true
+    }, opts);
 
     css.walkRules(function (rule) {
-      if (rule.selector === ':root') {
+      if (rule.selector === ':root' && opts.remove !== false) {
         rule.remove();
       }
     });
