@@ -40,6 +40,38 @@ npm install --save postcss-remove-root
 
 See the [PostCSS documentation](https://github.com/postcss/postcss#usage) for examples on how to use this plugin in different environments.
 
+## Options
+
+### `remove`
+
+Type: `boolean`
+Default: `true`
+
+Allows the plugin to be turned on or off. 
+
+This is useful when combined with [gulp-postcss](https://github.com/postcss/gulp-postcss)
+with a custom callback passing in a vinyl file object. 
+
+An example allowing the plugin to be used on a per-file-basis: 
+
+```js
+var gulp = require('gulp');
+var postcss = require('gulp-postcss');
+
+gulp.task('css', function () {
+    function callback(file) {
+        return {
+            plugins: [
+                require('postcss-remove-root')({ remove: file.basename !== 'base.css' })
+            ]
+        }
+    }
+    return gulp.src('./src/*.css')
+        .pipe(postcss(callback))
+        .pipe(gulp.dest('./dest'));
+});
+```
+
 ## Contributing
 
 - ⇄ Pull requests and ★ Stars are always welcome.

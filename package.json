@@ -21,7 +21,8 @@
   },
   "homepage": "https://github.com/cbracco/postcss-remove-root",
   "dependencies": {
-    "postcss": "^5.0.13"
+    "postcss": "^5.0.13",
+    "object-assign": "^4.0.1"
   },
   "devDependencies": {
     "postcss-custom-properties": "^5.0.0",
